@@ -34,12 +34,13 @@ app.use(bodyParser.json());
 // app.use(cors());
 //instead
 const corsOptions = {
-    origin: 'https://effulgent-cendol-24a4ac.netlify.app',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    allowedHeaders: ['Content-Type', 'Authorization']
+  origin: 'https://effulgent-cendol-24a4ac.netlify.app', // Add your frontend URL here
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allow these methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow the Authorization header
+  credentials: true, // If you are using cookies or sessions
 };
 
-app.use(cors(corsOptions));
+app.options('*', cors(corsOptions)); // Preflight request handling
 
 //rest Api create
 app.get('/', (req, res) => {
