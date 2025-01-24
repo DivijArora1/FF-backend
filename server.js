@@ -34,7 +34,7 @@ app.use(bodyParser.json());
 // app.use(cors());
 //instead
 const corsOptions = {
-    origin: 'https://stellar-bubblegum-7a9e2e.netlify.app',
+    origin: 'https://effulgent-cendol-24a4ac.netlify.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization']
 };
