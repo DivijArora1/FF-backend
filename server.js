@@ -39,7 +39,7 @@ const corsOptions = {
   allowedHeaders: ['Content-Type', 'Authorization'], // Allow the Authorization header
   credentials: true, // If you are using cookies or sessions
 };
-
+app.use(cors(corsOptions));
 app.options('*', cors(corsOptions)); // Preflight request handling
 
 //rest Api create
