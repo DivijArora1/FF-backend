@@ -34,7 +34,7 @@ app.use(bodyParser.json());
 // app.use(cors());
 //instead
 const corsOptions = {
-    origin: 'https://majestic-fenglisu-8c90a6.netlify.app',
+    origin: 'https://stellar-bubblegum-7a9e2e.netlify.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization']
 };
